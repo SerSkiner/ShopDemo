@@ -6,13 +6,16 @@ import java.util.Date;
 import javax.persistence.NoResultException;
 
 import com.ua.turtuk.entity.Product;
+import com.ua.turtuk.form.ProductForm;
+import com.ua.turtuk.model.ProductInfo;
+import com.ua.turtuk.utils.PaginationResult;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
-import org.o7planning.sbshoppingcart.entity.Product;
-import org.o7planning.sbshoppingcart.form.ProductForm;
-import org.o7planning.sbshoppingcart.model.ProductInfo;
-import org.o7planning.sbshoppingcart.pagination.PaginationResult;
+import com.ua.turtuk.entity.Product;
+import com.ua.turtuk.form.ProductForm;
+import com.ua.turtuk.model.ProductInfo;
+import com.ua.turtuk.utils.PaginationResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Propagation;
@@ -46,7 +49,10 @@ public class ProductDAO {
         return new ProductInfo(product.getCode(), product.getName(), product.getPrice());
     }
 
+
     @Transactional(propagation = Propagation.REQUIRES_NEW, rollbackFor = Exception.class)
+
+
     public void save(ProductForm productForm) {
 
         Session session = this.sessionFactory.getCurrentSession();

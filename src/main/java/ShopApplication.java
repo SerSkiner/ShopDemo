@@ -26,14 +26,14 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 		DataSourceTransactionManagerAutoConfiguration.class, //
 		HibernateJpaAutoConfiguration.class })
 
-public class TurtukApplication {
+public class ShopApplication {
 
 	@Autowired
 	private Environment env;
 
 
 	public static void main(String[] args) {
-		SpringApplication.run(TurtukApplication.class, args);
+		SpringApplication.run(ShopApplication.class, args);
 
 
 	}

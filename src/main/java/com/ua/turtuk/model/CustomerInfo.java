@@ -1,6 +1,6 @@
 package com.ua.turtuk.model;
 
-import org.o7planning.sbshoppingcart.form.CustomerForm;
+import com.ua.turtuk.form.CustomerForm;
 
 public class CustomerInfo {
 

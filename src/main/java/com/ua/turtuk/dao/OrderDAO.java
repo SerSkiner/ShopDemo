@@ -1,21 +1,23 @@
 package com.ua.turtuk.dao;
 
-mport java.util.Date;
+
+
+import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
-import org.o7planning.sbshoppingcart.entity.Order;
-import org.o7planning.sbshoppingcart.entity.OrderDetail;
-import org.o7planning.sbshoppingcart.entity.Product;
-import org.o7planning.sbshoppingcart.model.CartInfo;
-import org.o7planning.sbshoppingcart.model.CartLineInfo;
-import org.o7planning.sbshoppingcart.model.CustomerInfo;
-import org.o7planning.sbshoppingcart.model.OrderDetailInfo;
-import org.o7planning.sbshoppingcart.model.OrderInfo;
-import org.o7planning.sbshoppingcart.pagination.PaginationResult;
+import com.ua.turtuk.entity.Order;
+import com.ua.turtuk.entity.OrderDetail;
+import com.ua.turtuk.entity.Product;
+import com.ua.turtuk.model.CartInfo;
+import com.ua.turtuk.model.CartLineInfo;
+import com.ua.turtuk.model.CustomerInfo;
+import com.ua.turtuk.model.OrderDetailInfo;
+import com.ua.turtuk.model.OrderInfo;
+import com.ua.turtuk.utils.PaginationResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
